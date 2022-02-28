@@ -1,5 +1,4 @@
-
-package com.project.lockedme;
+package project;
 
 import java.io.IOException;
 import java.util.Scanner;

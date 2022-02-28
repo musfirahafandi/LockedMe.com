@@ -1,4 +1,4 @@
-package com.project.lockedme;
+package project;
 
 
 public class Main {

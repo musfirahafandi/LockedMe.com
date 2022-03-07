@@ -8,7 +8,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class OperationsDAO {
+public class Conditions {
 
 	public void listAllFiles(String path) {
 		

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Menus {
 	
 	Scanner scan = new Scanner(System.in);
-	OperationsDAO dao = new OperationsDAO();
+	Conditions dao = new Conditions();
 	
 	public void introScreen() {
 		System.out.println();
@@ -65,21 +65,21 @@ public class Menus {
 	
 	public void mainMenu() {
 		
-		int choice = 0;
+		int options = 0;
 		char decision = 0;
 		do {
 			
 			mainMenuOptions();
 			
 			try {
-				choice = Integer.parseInt(scan.nextLine());
+				options = Integer.parseInt(scan.nextLine());
 			} catch (NumberFormatException e) {
 				System.out.println("\nInvalid Input \nValid Input Integers:(1-3)\n");
 				mainMenu();
 			}
 			
 			
-			switch (choice) {
+			switch (options) {
 			
 			case 1:
 					System.out.println();
@@ -132,21 +132,21 @@ public class Menus {
 	public void subMenu() {
 		String file = null;
 		String fileName = null;
-		int choice = 0;
+		int options = 0;
 		
 		do {
 			
 			subMenuOptions();
 			
 			try {
-				choice = Integer.parseInt(scan.nextLine());
+				options = Integer.parseInt(scan.nextLine());
 			} catch (NumberFormatException e) {
 				System.out.println("Invalid Input \nValid Input Integers:(1-4)");
 				subMenu();
 			}
 			
 			
-			switch (choice) {
+			switch (options) {
 			case 1: 
 					System.out.println("\n==> Adding a File...");
 					System.out.println("Please enter a file name : ");
